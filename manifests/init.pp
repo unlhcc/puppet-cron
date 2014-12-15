@@ -12,8 +12,8 @@ class cron (
         owner   => 'root',
         group   => 'root',
         mode    => '0644',
-        content => $cron_allow_template,
-	}
+        content => template($cron_allow_template),
+    }
 
 }
 
